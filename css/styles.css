@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+
+}
 :root {
   --main-color: #757575;
   --secondary-color: #212121;
@@ -26,6 +35,40 @@ body {
   outline: 1px;
 }
 
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+p,ul,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/*-header-*/
+
+.menu {
+   display: flex;
+   margin-left: 93px;
+}
+.menu-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.menu-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ECECEC; 
+  
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -34,12 +77,19 @@ body {
   letter-spacing: 0.03em;
   color: var(--logo-color);
   text-decoration: none;
+  align-items: center;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo-header {
   color: var(--logo-header-color);
 }
 .logo-studio {
   color: var(--logo-studio-color);
+}
+.site-nav{
+    display: flex;
 }
 .menu-link {
   font-weight: 500;
@@ -56,64 +106,89 @@ body {
   color: var(--link-color);
 }
 
+.contacts {
+  display: flex;
+  margin-left: 718px; 
+  
+}
+
+.contact-item:not(:last-child){
+  margin-right: 50px;
+}
 .contact-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
   text-decoration: none;
-}
+  display: block;
+ }
 .contact-link:hover,
 .contact-link:focus {
   color: var(--link-color);
 }
+
 ul {
   list-style: none;
 }
 
+/*-ГЕРОЙ-*/
 .hero {
   background-color: var(--background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;   
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  
+  width: 696px;
+  margin-top: 0;
+    
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+   
 }
 .hero-btn {
+  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
+  
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--link-color);
   cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min width: 200px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  border: 1px solid transparent;
+  
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
 }
 
-.box-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--secondary-color);
-}
 
-.team-caption {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--secondary-color);
+/* преимущества */
+.future-list {
+  display: flex;
+}
+.future-item:not(:last-child){
+   margin-right: 30px;
+}
+.future-item {
+  width: 270px;
 }
 
 .future-title {
@@ -122,12 +197,55 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-color);
+  margin-bottom: 10px;
 }
 
 .future-text {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  
+}
+
+/* -what we do- */
+
+.box {
+  padding-top: 0;
+}
+
+.box-list{
+  display: flex;
+}
+.box-item{
+  display: block;
+}
+.box-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.box-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.team-caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  padding: 94px 668px 50px 668px;
+}
+
+.team-item {
+ width: 270px;
+ height: 368px;
+ border: 1px solid #000 ;
 }
 
 .team-title {
@@ -137,6 +255,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin: 30px 59px 10px 60px;
 }
 .team-text {
   font-size: 16px;
@@ -148,6 +267,8 @@ ul {
 
 .footer {
   background-color: var(--background-color);
+  width: 1600px;
+  height: 252px;
 }
 .address-title {
   line-height: 1.71;
