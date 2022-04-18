@@ -70,10 +70,7 @@ p,ul,h1,h2,h3,h4,h5,h6 {
 }
 
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
   border-bottom: 1px solid #ECECEC; 
-  
 }
 
 .logo {
@@ -113,8 +110,14 @@ p,ul,h1,h2,h3,h4,h5,h6 {
 
 .contacts {
   display: flex;
-  margin-left: 718px; 
-  
+ }
+ .header .container{
+   display: flex;
+   justify-content: space-between;
+ }
+.contact-item{
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-item:not(:last-child){
