@@ -45,6 +45,13 @@ p,ul,h1,h2,h3,h4,h5,h6 {
   padding: 0;
 }
 
+.img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+
 /*-header-*/
 
 .menu {
@@ -127,6 +134,7 @@ p,ul,h1,h2,h3,h4,h5,h6 {
   color: var(--link-color);
 }
 
+/*-other-*/
 ul {
   list-style: none;
 }
@@ -382,7 +390,7 @@ ul {
     margin-right: 8px;
 }
 
-/* --Примеры- */
+/* --Примеры портфолио- */
 
 .portfolio-list {
   display: flex;
@@ -404,6 +412,25 @@ ul {
     margin-bottom: 0;
 }
 
+.portfolio-cards {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+    text-decoration: none;
+    background-color: var(--primary-white-color); 
+    
+}
+
+.card-text {
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 24px 20px;
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -420,12 +447,11 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-color);
+
+  font-weight: 400;
+  font-family: 'Roboto';
+  font-style: normal;
 }
 
 
 
-.img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
